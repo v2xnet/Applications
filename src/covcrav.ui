@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <!-- interface-local-resource-path /usr/share/pixmaps/ -->
+  <object class="GtkImage" id="OCB">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="icon-name">network-offline</property>
+  </object>
+  <object class="GtkImage" id="OUTDOOR">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="icon-name">emblem-shared</property>
+  </object>
+  <object class="GtkImage" id="SOUND">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="icon-name">audio-x-generic</property>
+  </object>
+  <object class="GtkImage" id="fog">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixel-size">60</property>
+    <property name="icon-name">weather-fog</property>
+  </object>
+  <object class="GtkImage" id="image1">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="icon-name">preferences-other</property>
+  </object>
+  <object class="GtkImage" id="off">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="icon-name">application-exit</property>
+  </object>
+  <object class="GtkImage" id="rain">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixel-size">60</property>
+    <property name="icon-name">weather-showers</property>
+  </object>
+  <object class="GtkImage" id="reset">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="icon-name">mail-send-receive</property>
+  </object>
+  <object class="GtkImage" id="storm">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixel-size">60</property>
+    <property name="icon-name">weather-storm</property>
+  </object>
+  <object class="GtkImage" id="wind">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixel-size">60</property>
+    <property name="icon-name">weather-severe-alert</property>
+  </object>
+  <object class="GtkWindow" id="window">
+    <property name="name">window</property>
+    <property name="width-request">480</property>
+    <property name="height-request">320</property>
+    <property name="visible">True</property>
+    <property name="can-focus">True</property>
+    <property name="has-focus">True</property>
+    <property name="is-focus">True</property>
+    <property name="resizable">False</property>
+    <property name="window-position">center</property>
+    <property name="default-width">480</property>
+    <property name="default-height">320</property>
+    <property name="destroy-with-parent">True</property>
+    <property name="urgency-hint">True</property>
+    <property name="accept-focus">False</property>
+    <property name="focus-on-map">False</property>
+    <child>
+      <object class="GtkFixed" id="fixed">
+        <property name="name">fixed</property>
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkButton" id="button1">
+            <property name="label" translatable="yes">FOG</property>
+            <property name="name">button1</property>
+            <property name="width-request">129</property>
+            <property name="height-request">70</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="has-focus">True</property>
+            <property name="is-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="tooltip-markup" translatable="yes">signal a very foggy area</property>
+            <property name="halign">center</property>
+            <property name="valign">center</property>
+            <property name="image">fog</property>
+            <property name="use-underline">True</property>
+            <property name="always-show-image">True</property>
+            <signal name="clicked" handler="on_button1_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="y">7</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button2">
+            <property name="label" translatable="yes">RAIN</property>
+            <property name="name">button2</property>
+            <property name="width-request">129</property>
+            <property name="height-request">70</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="has-focus">True</property>
+            <property name="is-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="tooltip-markup" translatable="yes">signal a very rainy area</property>
+            <property name="halign">center</property>
+            <property name="valign">center</property>
+            <property name="image">rain</property>
+            <property name="use-underline">True</property>
+            <property name="always-show-image">True</property>
+            <signal name="clicked" handler="on_button2_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="y">85</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label1">
+            <property name="width-request">159</property>
+            <property name="height-request">70</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="tooltip-markup" translatable="yes">CovCraV V1.0</property>
+            <property name="width-chars">8</property>
+            <property name="max-width-chars">32</property>
+            <attributes>
+              <attribute name="font-desc" value="Source Code Pro Bold 14"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">170</property>
+            <property name="y">43</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label_messages">
+            <property name="name">label_messages</property>
+            <property name="width-request">233</property>
+            <property name="height-request">73</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="halign">center</property>
+            <property name="valign">center</property>
+            <property name="label" translatable="yes">FOG AREA</property>
+            <property name="justify">center</property>
+            <attributes>
+              <attribute name="font-desc" value="Zekton 24"/>
+              <attribute name="foreground" value="#eded33333b3b"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">139</property>
+            <property name="y">34</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_off">
+            <property name="label" translatable="yes">OFF</property>
+            <property name="name">button_off</property>
+            <property name="width-request">92</property>
+            <property name="height-request">39</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="halign">center</property>
+            <property name="valign">center</property>
+            <property name="image">off</property>
+            <property name="use-underline">True</property>
+            <property name="always-show-image">True</property>
+            <signal name="clicked" handler="on_button_off_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">392</property>
+            <property name="y">7</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_reset">
+            <property name="label" translatable="yes">RESET</property>
+            <property name="name">button_reset</property>
+            <property name="width-request">92</property>
+            <property name="height-request">60</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="image">reset</property>
+            <property name="use-underline">True</property>
+            <property name="always-show-image">True</property>
+            <signal name="clicked" handler="on_button_reset_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">392</property>
+            <property name="y">55</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label_neighbors">
+            <property name="name">label_neighbors</property>
+            <property name="width-request">264</property>
+            <property name="height-request">100</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="halign">start</property>
+            <property name="valign">start</property>
+            <property name="label" translatable="yes">0002:2536:0232:0236~236m</property>
+            <property name="use-underline">True</property>
+            <property name="justify">fill</property>
+            <property name="selectable">True</property>
+            <property name="yalign">0.009999999776482582</property>
+            <attributes>
+              <attribute name="font-desc" value="monofur Bold 14"/>
+              <attribute name="foreground" value="#000000000000"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">129</property>
+            <property name="y">106</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_test">
+            <property name="label" translatable="yes">TEST</property>
+            <property name="name">button_test</property>
+            <property name="width-request">92</property>
+            <property name="height-request">61</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="image">image1</property>
+            <property name="use-underline">True</property>
+            <property name="always-show-image">True</property>
+            <signal name="clicked" handler="on_button_test_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">392</property>
+            <property name="y">124</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label_nodeid">
+            <property name="name">label_nodeid</property>
+            <property name="width-request">254</property>
+            <property name="height-request">31</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <attributes>
+              <attribute name="font-desc" value="Zekton Bold 14"/>
+              <attribute name="foreground" value="#1a1a5f5fb4b4"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">132</property>
+            <property name="y">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkComboBoxText" id="combobox_period">
+            <property name="name">combobox_period</property>
+            <property name="width-request">92</property>
+            <property name="height-request">34</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <signal name="changed" handler="on_combobox_period_changed" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">392</property>
+            <property name="y">196</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkComboBoxText" id="combobox_nb_itr">
+            <property name="name">combobox_nb_itr</property>
+            <property name="width-request">92</property>
+            <property name="height-request">34</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <signal name="changed" handler="on_combobox_nb_itr_changed" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">392</property>
+            <property name="y">235</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkComboBoxText" id="combobox_g_area">
+            <property name="name">combobox_g_area</property>
+            <property name="width-request">92</property>
+            <property name="height-request">34</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <signal name="changed" handler="on_combobox_g_area_changed" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">392</property>
+            <property name="y">273</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="box_control">
+            <property name="name">box_metrics</property>
+            <property name="width-request">120</property>
+            <property name="height-request">72</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="orientation">vertical</property>
+            <property name="spacing">7</property>
+            <property name="homogeneous">True</property>
+            <child>
+              <object class="GtkCheckButton" id="checkbutton1">
+                <property name="label" translatable="yes">SOUND</property>
+                <property name="name">checkbutton1</property>
+                <property name="height-request">25</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">False</property>
+                <property name="tooltip-text" translatable="yes">enable or disable sound</property>
+                <property name="image">SOUND</property>
+                <property name="draw-indicator">True</property>
+                <signal name="toggled" handler="on_checkbutton1_toggled" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="checkbutton2">
+                <property name="label" translatable="yes">OCB</property>
+                <property name="name">checkbutton2</property>
+                <property name="height-request">25</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">False</property>
+                <property name="image">OCB</property>
+                <property name="draw-indicator">True</property>
+                <signal name="toggled" handler="on_checkbutton2_toggled" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkCheckButton" id="checkbutton3">
+                <property name="label" translatable="yes">Outdoor</property>
+                <property name="name">checkbutton3</property>
+                <property name="height-request">25</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">False</property>
+                <property name="image">OUTDOOR</property>
+                <property name="draw-indicator">True</property>
+                <signal name="toggled" handler="on_checkbutton3_toggled" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="x">136</property>
+            <property name="y">204</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="width-request">110</property>
+            <property name="height-request">50</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="homogeneous">True</property>
+            <child>
+              <object class="GtkImage" id="gps">
+                <property name="name">gps</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">gps22.png</property>
+                <property name="use-fallback">True</property>
+                <property name="icon_size">5</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkImage" id="connected">
+                <property name="name">connected</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">car.png</property>
+                <property name="pixel-size">22</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkImage" id="sync">
+                <property name="name">sync</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">sync.png</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="x">267</property>
+            <property name="y">214</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSeparator">
+            <property name="width-request">1</property>
+            <property name="height-request">114</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="halign">start</property>
+            <property name="valign">start</property>
+            <property name="orientation">vertical</property>
+          </object>
+          <packing>
+            <property name="x">264</property>
+            <property name="y">206</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSeparator">
+            <property name="width-request">115</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+          </object>
+          <packing>
+            <property name="x">264</property>
+            <property name="y">206</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSeparator">
+            <property name="width-request">1</property>
+            <property name="height-request">114</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="orientation">vertical</property>
+          </object>
+          <packing>
+            <property name="x">379</property>
+            <property name="y">206</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button3">
+            <property name="label" translatable="yes">WIND</property>
+            <property name="name">button3</property>
+            <property name="width-request">129</property>
+            <property name="height-request">70</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="tooltip-text" translatable="yes">Signal a strong wind</property>
+            <property name="image">wind</property>
+            <signal name="clicked" handler="on_button3_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="y">164</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button4">
+            <property name="label" translatable="yes">STORM</property>
+            <property name="name">button4</property>
+            <property name="width-request">129</property>
+            <property name="height-request">70</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="image">storm</property>
+            <signal name="clicked" handler="on_button4_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="y">244</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="width-request">100</property>
+            <property name="height-request">-1</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkLabel" id="label_id">
+                <property name="name">label_id</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="label" translatable="yes">------</property>
+                <property name="justify">center</property>
+                <attributes>
+                  <attribute name="font-desc" value="Source Code Pro Bold 20"/>
+                  <attribute name="foreground" value="#c0c01c1c2828"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="pack-type">end</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label_offset">
+                <property name="name">label_offset</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">N_SYNC</property>
+                <property name="justify">center</property>
+                <attributes>
+                  <attribute name="font-desc" value="Source Code Pro Semi-Bold 10"/>
+                  <attribute name="foreground" value="#616135358383"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="x">267</property>
+            <property name="y">263</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
